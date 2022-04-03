@@ -21,8 +21,6 @@ public class DemoqaTests {
         Configuration.browserSize = "1920x1080";
     }
 
-
-
     @Test
     void fillFormTest() {
         String fname = "Alex";
@@ -30,7 +28,6 @@ public class DemoqaTests {
         String email = "alexetest@test.ru";
         String phone = "7000999001";
         String address = "36 Main str, app 54";
-
 
         open("/automation-practice-form");
         zoom(0.5);
@@ -40,7 +37,6 @@ public class DemoqaTests {
         $("#userEmail").setValue(email);
         $(byText("Male")).click();
         $("#userNumber").setValue(phone);
-
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOptionByValue("8");
         $(".react-datepicker__year-select").selectOptionByValue("1995");
